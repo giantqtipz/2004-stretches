@@ -1,10 +1,11 @@
 // create an array method called "next" that console.logs
 // the next index in the array when called.
 
-Array.prototype.next = () => {
-    let tempArray = Array;
-    return tempArray.shift(); 
+Array.prototype.next = function () {
+    this.tempArray = this;
+    return this.tempArray.shift(); 
 }
+
 
 /*
  Example:
