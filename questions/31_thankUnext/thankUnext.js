@@ -1,6 +1,11 @@
 // create an array method called "next" that console.logs
 // the next index in the array when called.
 
+Array.prototype.next = () => {
+    let tempArray = Array;
+    return tempArray.shift(); 
+}
+
 /*
  Example:
  someArr = ['shake', 'and', 'bake']
