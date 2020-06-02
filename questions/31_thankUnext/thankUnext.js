@@ -2,8 +2,8 @@
 // the next index in the array when called.
 
 Array.prototype.next = function () {
-    this.tempArray = this;
-    return this.tempArray.shift(); 
+    this.result = this[0];
+    console.log(this.result); 
 }
 
 
