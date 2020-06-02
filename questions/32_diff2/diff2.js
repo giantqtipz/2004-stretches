@@ -5,11 +5,11 @@
 const diffTwo = (arg) => {
     if (!Array.isArray(arg)){ throw new Error(); } 
 
-    let sortArray = arg.sort((a,b)=> a-b);
+    arg.sort((a,b)=> a-b);
     let result = [];
 
-    for(let i=0;i<sortArray.length;i++){
-        for(let j=1;j<sortArray.length;j++){
+    for(let i=0;i<arg.length;i++){
+        for(let j=1;j<arg.length;j++){
             if(arg[j] - arg[i] === 2){
                 result.push([arg[i], arg[j]])
             }
