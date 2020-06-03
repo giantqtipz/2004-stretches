@@ -19,7 +19,7 @@ const directory = (obj) => {
     }
   }
 
-  console.log(newObj);
+  return newObj;
 };
 
 module.exports = { directory };
