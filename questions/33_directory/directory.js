@@ -10,8 +10,16 @@
 // };
 // directory(phonebookData)=>{ 'a/b/c': 12 }
 
-const directory = () => {
+const directory = (obj) => {
   //code in here
+  let newObj = {}; // probably need a recursive solution, but don't remember how to do it...
+  for(let key in obj){
+    for(let innerKey in obj[key]){
+      newObj[`${key}/${obj[key]}/${obj[key][innerKey]}`] = obj[key][innerKey];
+    }
+  }
+
+  console.log(newObj);
 };
 
 module.exports = { directory };
