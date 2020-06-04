@@ -17,6 +17,13 @@ class digitalRoot {
             }           
             return this.root(result);
         }
+
+        // using reduce
+        // while(split.length > 1){
+        //     const sum = split.reduce((a,b) => {return a = a + parseInt(b)},0)
+        //     return this.root(sum);
+        // }
+
         return num;
     }   
 }
