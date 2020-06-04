@@ -7,8 +7,6 @@ ex.
 
 //YOUR CODE GOES HERE
 class digitalRoot {
-    constructor(){}
-
     root(num){
         let result = 0;    
         const split = num.toString().split('');
