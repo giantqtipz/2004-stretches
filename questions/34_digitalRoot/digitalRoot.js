@@ -21,13 +21,6 @@ class digitalRoot {
         }
         return num;
     }   
-
 }
-    
-    
-
-
-
-
 
 module.exports = { digitalRoot };
