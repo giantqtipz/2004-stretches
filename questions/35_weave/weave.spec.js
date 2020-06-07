@@ -27,35 +27,35 @@ describe('weave functionality', () => {
       null,
     ]);
   });
-  it('weave can weave three arrays', () => {
-    const arr1 = ['E', 'l', 'i', 'o', 't'];
-    const arr2 = ['D', 'e', 'a', 'n', 'n', 'a'];
-    const arr3 = ['T', 'h', 'o', 'm', 'p', 's', 'o', 'n'];
-    expect(weave(arr1, arr2, arr3)).toEqual([
-      'E',
-      'D',
-      'T',
-      'l',
-      'e',
-      'h',
-      'i',
-      'a',
-      'o',
-      'o',
-      'n',
-      'm',
-      't',
-      'n',
-      'p',
-      null,
-      'a',
-      's',
-      null,
-      null,
-      'o',
-      null,
-      null,
-      'n',
-    ]);
-  });
+  // it('weave can weave three arrays', () => {
+  //   const arr1 = ['E', 'l', 'i', 'o', 't'];
+  //   const arr2 = ['D', 'e', 'a', 'n', 'n', 'a'];
+  //   const arr3 = ['T', 'h', 'o', 'm', 'p', 's', 'o', 'n'];
+  //   expect(weave(arr1, arr2, arr3)).toEqual([
+  //     'E',
+  //     'D',
+  //     'T',
+  //     'l',
+  //     'e',
+  //     'h',
+  //     'i',
+  //     'a',
+  //     'o',
+  //     'o',
+  //     'n',
+  //     'm',
+  //     't',
+  //     'n',
+  //     'p',
+  //     null,
+  //     'a',
+  //     's',
+  //     null,
+  //     null,
+  //     'o',
+  //     null,
+  //     null,
+  //     'n',
+  //   ]);
+  // });
 });
