@@ -18,6 +18,5 @@ const decypher = (arg) => {
 
   })
   return result.join(' ');
+}
 
-};
-module.exports = { decypher };
