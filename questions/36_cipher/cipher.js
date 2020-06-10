@@ -1,3 +1,4 @@
+setTimeout(() => {console.log('sure whatever');},2000);
 const encrypt = (arg) => {
   //YOUR CODE HERE
   let result = [];
