@@ -5,8 +5,7 @@ and a key for the return value.
 
 function sortOrder(data, key, toReturn) {
   // YOUR CODE
-  const sort = data.sort((a,b) => a[key] - b[key]);
-  return sort.map(item => item[toReturn]);
+  return data.sort((a,b) => a[key] - b[key]).map(item => item[toReturn]);
 }
 
 module.exports = { sortOrder };
