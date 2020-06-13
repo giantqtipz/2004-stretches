@@ -8,12 +8,8 @@ class Box {
     }
 
     pack(color, capacity){
-        let currentCapacity = 0;
-        if(currentCapacity >= this.capacity){ throw new Error('capacity reached'); }
-         else {
-             this.contents.push(new Box(color, capacity));
-        currentCapacity++;
-         }
+        if(this.contents.length === this.capacity){ throw new Error('capacity reached'); }
+        this.contents.push(new Box(color, capacity));
     }
 
 
