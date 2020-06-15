@@ -9,17 +9,17 @@ class Iterator {
     } else {
       throw new Error();
     }
+    this.index = 0;
   }
 
   next(){
-    let done = false;
-    for(let i=0;i<this.arr.length;i++){
-      if(i === this.arr.length){ 
-        return {done: done, value: undefined}
-      }
-        return {done: done, value: this.arr[i]}
-      }
+    this.index++;
+    if(this.index === this.arr.length+1){
+      return {done: true, value: undefined}
+    }
+    return ({done: false, value: this.arr[this.index-1]})
   }
+
 
 }
 
