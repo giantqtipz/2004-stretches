@@ -32,7 +32,7 @@ class Box {
   //*****YOUR CODE STARTS HERE******
   expand(quantity, newBoxes){
     for(let i=0;i<newBoxes.length;i++){
-      this.contents.push(new Box(...newBoxes[i]));
+      this.contents.push(...newBoxes[i]);
     }
   }
 
