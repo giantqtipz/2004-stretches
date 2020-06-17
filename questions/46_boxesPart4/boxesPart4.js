@@ -36,7 +36,7 @@ class Box {
     }
   }
 
-  loot(idx){
+  loot(idx){ //brain dead long day
     return null;
   }
 }
