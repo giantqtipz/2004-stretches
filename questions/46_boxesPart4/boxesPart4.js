@@ -37,7 +37,11 @@ class Box {
   }
 
   loot(idx){ //brain dead long day
-    return null;
+    if(this.contents[idx]){
+      return this.contents[idx]
+    } else {
+      return this.contents[Math.floor(Math.random() * this.contents.length)]
+    }
   }
 }
 
