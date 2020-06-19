@@ -17,6 +17,7 @@
 // result = "csps123"
 
 // does not work when shift is greater than alphabet and numbers lengths...
+// does not pass 4th test
 const encryptString = (str, shift) => {
   // YOUR CODE
   if(!str.match(/^[a-z0-9]+$/i)) { throw new Error }
