@@ -25,8 +25,6 @@ const encryptString = (str, shift) => {
     const caps = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''); 
     const letters = 'abcdefghijklmnopqrstuvwxyz'.split('');
     const numbers =  '123456789'.split('');
-  
-
     
     const reduction = str.split('').reduce((a,b) => {
       caps.includes(b) ? b = caps[(caps.indexOf(b) + shift)%26] || caps[caps.indexOf(b) + (shift%26)] : null;
