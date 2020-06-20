@@ -26,10 +26,12 @@ const encryptString = (str, shift) => {
     const letters = 'abcdefghijklmnopqrstuvwxyz'.split('');
     const numbers =  '123456789'.split('');
   
+
+    
     const reduction = str.split('').reduce((a,b) => {
-      caps.includes(b) ? b = caps[caps.indexOf(b) + shift] || caps[shift]: null;
-      letters.includes(b) ? b = letters[letters.indexOf(b) + shift] || letters[shift] : null;
-      numbers.includes(b) ? b = numbers[numbers.indexOf(b) + shift] || numbers[shift] : null;
+      caps.includes(b) ? b = caps[(caps.indexOf(b) + shift)%26] || caps[caps.indexOf(b) + (shift%26)] : null;
+      letters.includes(b) ? b = letters[(letters.indexOf(b) + shift)%26] || letters[letters.indexOf(b) + (shift%26)] : null;
+      numbers.includes(b) ? b = numbers[(numbers.indexOf(b) + shift)%10] || numbers[numbers.indexOf(b) + (shift%10)] : null;
       a.push(b);
       return a;
     }, [])
