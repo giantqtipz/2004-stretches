@@ -5,8 +5,22 @@
 
 //***Your solution should NOT include nested loops of any type***
 
-const twoNumberSum = () => {
+const twoNumberSum = (arr, target) => {
   //write code here
+  const result = [];
+  const num = 1;
+
+  const recurse = (arg) => {
+    for(i=0;i<arg.length;i++){
+      if(arg[i] + arg[num] !== target){
+        num++;
+        return recurse()
+      }
+      if(arg[i] + arg[num] === target){
+        result.push(arg[i], arg[i+1])
+      }
+    }
+  }
 };
 
 module.exports = { twoNumberSum };
