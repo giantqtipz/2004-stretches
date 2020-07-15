@@ -4,4 +4,18 @@
 
 //write your function here
 
+const sqauredGen = (inputOne, inputTwo) => {
+    typeof inputOne !== 'number' || typeof inputTwo !== 'number' ? Error() : null;
+    
+    let total = 0;
+
+    for(i=inputOne;i<=inputTwo;i++){
+        total = inputOne * inputOne; 
+    }
+
+    return total;
+
+}
+
+
 module.exports = { sqauredGen };
