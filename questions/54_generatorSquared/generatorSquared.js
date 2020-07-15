@@ -9,13 +9,30 @@ const sqauredGen = (inputOne, inputTwo) => {
     
     let total = 0;
 
-    for(i=inputOne;i<=inputTwo;i++){
-        total = inputOne * inputOne; 
+    if(inputOne > inputTwo){
+        return;
+    }
+
+    inputOne++
+    total = inputOne + inputOne;
+
+    const next = () => {
+        inputOne++;
+        total = inputOne + inputOne;
+        return total;
     }
 
     return total;
-
 }
 
+// solution
+
+// function* sqauredGen(num, max){
+//     while(num<max){
+//         num++
+//         yield num*num
+//     }
+//     return undefined;
+// }
 
 module.exports = { sqauredGen };
